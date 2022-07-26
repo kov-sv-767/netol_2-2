@@ -4,13 +4,11 @@ public class SalesManager {
     public SalesManager(long[] sales) {
         this.sales = sales;
     }
-
-
-    public long max() {
-        long max = -1;
-        for (long sale : sales) {
-            if (sale > max) {
-                max = sale;
+    public long maxSale(long []sales) {
+        long max = sales[0];
+        for (int i = 1; i < sales.length; i++) {
+            if (sales[i] > max) {
+                max = sales[i];
             }
         }
         return max;
