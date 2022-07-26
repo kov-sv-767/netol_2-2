@@ -1,0 +1,8 @@
+# Default ignored files
+/shelf/
+#*.*ml
+.idea/
+out/
+target/
+*.iml
+
